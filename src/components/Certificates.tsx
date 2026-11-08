@@ -27,7 +27,7 @@ const certificates: Certificate[] = [
     organization: "10 Minute School",
     date: "Jan 2026",
     category: "Programming",
-    image: "/assets/certificates/C.JPEG",
+    image: "/assets/certificates/C.jpeg",
     description:
       "Successfully completed the সহজ ভাষায় C Programming course. Developed foundational knowledge of C programming, including programming fundamentals, logical thinking, problem-solving, and writing structured code.",
     link: "https://www.linkedin.com/in/syeda-nujhath-tabassum/overlay/Certifications/840532563/treasury/?profileId=ACoAAGmICUcB6HGaWHQLBoKCKLnCWd8apHHbmeo",
@@ -37,7 +37,7 @@ const certificates: Certificate[] = [
     organization: "10 Minute School",
     date: "Mar 2026",
     category: "Graphic Design",
-    image: "/assets/certificates/Photoshop.JPEG",
+   image: "/assets/certificates/Photoshop.jpeg",
     description:
       "Successfully completed the Graphic Designing with Photoshop course. Gained practical knowledge of Photoshop fundamentals, image manipulation, advanced editing tools, creative color management, blending effects, and mockup creation.",
     link: "https://www.linkedin.com/in/syeda-nujhath-tabassum/overlay/Certifications/840426607/treasury/?profileId=ACoAAGmICUcB6HGaWHQLBoKCKLnCWd8apHHbmeo",
@@ -48,7 +48,7 @@ const certificates: Certificate[] = [
       "Department of Business Administration, Metropolitan University",
     date: "Participation Certificate",
     category: "Professional Development",
-    image: "/assets/certificates/CV.JPEG",
+    image: "/assets/certificates/CV.jpeg",
     description:
       'Successfully participated in the workshop "How to Make a CV Good to Great!". Gained valuable insights into CV preparation, professional presentation, and highlighting academic achievements, skills, and experiences.',
     link: "https://www.linkedin.com/in/syeda-nujhath-tabassum/overlay/Certifications/840092925/treasury/?profileId=ACoAAGmICUcB6HGaWHQLBoKCKLnCWd8apHHbmeo",
@@ -58,7 +58,7 @@ const certificates: Certificate[] = [
     organization: "Leading University Research Society (LURS)",
     date: "Aug 2026",
     category: "Research",
-    image: "/assets/certificates/LURS.JPEG",
+   image: "/assets/certificates/LURS.jpeg",
     description:
       'Received a Certificate of Participation for attending the conference on August 1, 2026. The theme was "Turning Ideas into Sustainable Solutions for a Better Tomorrow", focusing on research, innovation, and sustainable development.',
     link: "https://www.linkedin.com/in/syeda-nujhath-tabassum/overlay/Certifications/839964245/treasury/?profileId=ACoAAGmICUcB6HGaWHQLBoKCKLnCWd8apHHbmeo",
@@ -68,7 +68,8 @@ const certificates: Certificate[] = [
     organization: "Metropolitan University Social Services Club (MUSSC)",
     date: "Sep 2026",
     category: "Leadership & Volunteering",
-    image: "/assets/certificates/MUSSC.JPEG",
+    image: "/assets/certificates/MUSSC.jpeg",
+
     description:
       "Received a Certificate of Appreciation for serving as Assistant Publicity Director at the Eye & Dental Camp organized by Metropolitan University Social Services Club.",
     link: "https://www.linkedin.com/in/syeda-nujhath-tabassum/overlay/Certifications/839761731/treasury/?profileId=ACoAAGmICUcB6HGaWHQLBoKCKLnCWd8apHHbmeo",
@@ -78,7 +79,7 @@ const certificates: Certificate[] = [
     organization: "Metropolitan University",
     date: "Feb 2024",
     category: "Communication",
-    image: "/assets/certificates/English_Camp.JPEG",
+    image: "/assets/certificates/English_Camp.jpeg",
     description:
       "Successfully completed a one-month English Language Camp organized by Metropolitan University, Sylhet, from 28 January 2024 to 27 February 2024. Participated in activities designed to improve English language proficiency, communication skills, and confidence in using English.",
     link: "https://www.linkedin.com/in/syeda-nujhath-tabassum/overlay/Certifications/1007442105/treasury/?profileId=ACoAAGmICUcB6HGaWHQLBoKCKLnCWd8apHHbmeo",
@@ -88,7 +89,7 @@ const certificates: Certificate[] = [
     organization: "Sylhet IT Academy",
     date: "Sep 2021",
     category: "Graphic Design",
-    image: "/assets/certificates/Graphics.JPEG",
+   image: "/assets/certificates/Graphics.jpeg",
     description:
       "Successfully completed a Graphic Design training course at Sylhet IT Academy. Gained foundational knowledge and practical skills in graphic design, including visual communication, creative design concepts, and digital design techniques.",
     link: "https://www.linkedin.com/in/syeda-nujhath-tabassum/overlay/Certifications/1007301459/treasury/?profileId=ACoAAGmICUcB6HGaWHQLBoKCKLnCWd8apHHbmeo",

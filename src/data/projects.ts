@@ -74,7 +74,7 @@ export const projects: Project[] = [
 
     liveUrl: "https://assignment-7-one-rho.vercel.app/",
     githubUrl: "https://github.com/Nujhath-Tabassum/Bazar-dor",
-    image: "/assets/projects/Bazar-dor.PNG",
+    image: "/assets/projects/Bazar-dor.png",
 
     status: "Completed",
   },
@@ -135,7 +135,7 @@ export const projects: Project[] = [
 
     liveUrl: "https://harmonious-douhua-869fb8.netlify.app/",
     githubUrl: "https://github.com/Nujhath-Tabassum/Dev_Stack",
-    image: "/assets/projects/Dev-Stack.PNG",
+   image: "/assets/projects/Dev-Stack.png",
 
     status: "Completed",
   },
@@ -197,7 +197,7 @@ export const projects: Project[] = [
 
     liveUrl: "https://assignment-6-six-gamma.vercel.app/",
     githubUrl: "https://github.com/Nujhath-Tabassum/Fitlog",
-    image: "/assets/projects/Fit-log.PNG",
+    image: "/assets/projects/Fit-Log.png",
 
     status: "Completed",
   },
@@ -336,7 +336,7 @@ export const projects: Project[] = [
 
     liveUrl: "https://uddipon-eight.vercel.app/",
     githubUrl: "https://github.com/Nujhath-Tabassum/Uddipon",
-    image: "/assets/projects/Uddipon.PNG",
+    image: "/assets/projects/Uddipon.png",
 
     status: "Completed",
   },
