@@ -11,16 +11,26 @@ import {
   ZoomIn,
 } from "lucide-react";
 
-const certificates = [
+interface Certificate {
+  title: string;
+  organization: string;
+  date: string;
+  category: string;
+  image: string;
+  description: string;
+  link: string;
+}
+
+const certificates: Certificate[] = [
   {
     title: "সহজ ভাষায় C Programming",
     organization: "10 Minute School",
     date: "Jan 2026",
     category: "Programming",
     image: "/assets/certificates/C.JPEG",
-    
     description:
       "Successfully completed the সহজ ভাষায় C Programming course. Developed foundational knowledge of C programming, including programming fundamentals, logical thinking, problem-solving, and writing structured code.",
+    link: "https://www.linkedin.com/in/syeda-nujhath-tabassum/overlay/Certifications/840532563/treasury/?profileId=ACoAAGmICUcB6HGaWHQLBoKCKLnCWd8apHHbmeo",
   },
   {
     title: "Graphic Designing with Photoshop",
@@ -30,6 +40,7 @@ const certificates = [
     image: "/assets/certificates/Photoshop.JPEG",
     description:
       "Successfully completed the Graphic Designing with Photoshop course. Gained practical knowledge of Photoshop fundamentals, image manipulation, advanced editing tools, creative color management, blending effects, and mockup creation.",
+    link: "https://www.linkedin.com/in/syeda-nujhath-tabassum/overlay/Certifications/840426607/treasury/?profileId=ACoAAGmICUcB6HGaWHQLBoKCKLnCWd8apHHbmeo",
   },
   {
     title: "How to Make a CV Good to Great!",
@@ -37,43 +48,50 @@ const certificates = [
       "Department of Business Administration, Metropolitan University",
     date: "Participation Certificate",
     category: "Professional Development",
-   image: "/assets/certificates/CV.JPEG",
-   description:
+    image: "/assets/certificates/CV.JPEG",
+    description:
       'Successfully participated in the workshop "How to Make a CV Good to Great!". Gained valuable insights into CV preparation, professional presentation, and highlighting academic achievements, skills, and experiences.',
+    link: "https://www.linkedin.com/in/syeda-nujhath-tabassum/overlay/Certifications/840092925/treasury/?profileId=ACoAAGmICUcB6HGaWHQLBoKCKLnCWd8apHHbmeo",
   },
   {
     title: "LURS 3rd Student Research Conference 2026",
     organization: "Leading University Research Society (LURS)",
     date: "Aug 2026",
     category: "Research",
-   image: "/assets/certificates/LURS.JPEG",
+    image: "/assets/certificates/LURS.JPEG",
     description:
       'Received a Certificate of Participation for attending the conference on August 1, 2026. The theme was "Turning Ideas into Sustainable Solutions for a Better Tomorrow", focusing on research, innovation, and sustainable development.',
+    link: "https://www.linkedin.com/in/syeda-nujhath-tabassum/overlay/Certifications/839964245/treasury/?profileId=ACoAAGmICUcB6HGaWHQLBoKCKLnCWd8apHHbmeo",
   },
   {
     title: "Assistant Publicity Director – Eye & Dental Camp",
-    organization:
-      "Metropolitan University Social Services Club (MUSSC)",
+    organization: "Metropolitan University Social Services Club (MUSSC)",
     date: "Sep 2026",
     category: "Leadership & Volunteering",
-   image: "/assets/certificates/MUSSC.JPEG",description:
+    image: "/assets/certificates/MUSSC.JPEG",
+    description:
       "Received a Certificate of Appreciation for serving as Assistant Publicity Director at the Eye & Dental Camp organized by Metropolitan University Social Services Club.",
+    link: "https://www.linkedin.com/in/syeda-nujhath-tabassum/overlay/Certifications/839761731/treasury/?profileId=ACoAAGmICUcB6HGaWHQLBoKCKLnCWd8apHHbmeo",
   },
   {
     title: "English Language Camp",
     organization: "Metropolitan University",
     date: "Feb 2024",
     category: "Communication",
-   image: "/assets/certificates/English_Camp.JPEG",description:
+    image: "/assets/certificates/English_Camp.JPEG",
+    description:
       "Successfully completed a one-month English Language Camp organized by Metropolitan University, Sylhet, from 28 January 2024 to 27 February 2024. Participated in activities designed to improve English language proficiency, communication skills, and confidence in using English.",
+    link: "https://www.linkedin.com/in/syeda-nujhath-tabassum/overlay/Certifications/1007442105/treasury/?profileId=ACoAAGmICUcB6HGaWHQLBoKCKLnCWd8apHHbmeo",
   },
   {
     title: "Graphic Design",
     organization: "Sylhet IT Academy",
     date: "Sep 2021",
     category: "Graphic Design",
-   image: "/assets/certificates/Graphics.JPEG",description:
+    image: "/assets/certificates/Graphics.JPEG",
+    description:
       "Successfully completed a Graphic Design training course at Sylhet IT Academy. Gained foundational knowledge and practical skills in graphic design, including visual communication, creative design concepts, and digital design techniques.",
+    link: "https://www.linkedin.com/in/syeda-nujhath-tabassum/overlay/Certifications/1007301459/treasury/?profileId=ACoAAGmICUcB6HGaWHQLBoKCKLnCWd8apHHbmeo",
   },
 ];
 
