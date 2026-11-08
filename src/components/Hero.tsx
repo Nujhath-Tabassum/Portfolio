@@ -21,11 +21,11 @@ export default function Hero() {
       className="relative flex min-h-screen items-center overflow-hidden bg-[var(--background)] px-5 pb-24 pt-32 md:px-8"
     >
       {/* Background Decorations */}
-      <div className="pointer-events-none absolute -left-40 top-20 h-[400px] w-[400px] rounded-full bg-violet-500/10 blur-[130px]" />
+     {/* Background Decorations */}
+{/* Background Decorations */}
+<div className="pointer-events-none absolute -left-40 top-20 h-[400px] w-[400px] rounded-full bg-violet-500/10 blur-[130px]" />
 
-      <div className="pointer-events-none absolute -bottom-20 right-0 h-[450px] w-[450px] rounded-full bg-blue-500/10 blur-[140px]" />
-
-      <div className="pointer-events-none absolute inset-0 opacity-[0.035] [background-image:radial-gradient(var(--foreground)_1px,transparent_1px)] [background-size:30px_30px]" />
+<div className="pointer-events-none absolute -bottom-20 right-0 h-[450px] w-[450px] rounded-full bg-blue-500/10 blur-[140px]" />
 
       <div className="container relative z-10 mx-auto grid items-center gap-16 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10">
         {/* LEFT CONTENT */}

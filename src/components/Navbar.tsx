@@ -8,7 +8,6 @@ import {
   X,
   Sun,
   Moon,
-  ArrowUpRight,
 } from "lucide-react";
 
 const navLinks = [
@@ -141,8 +140,8 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Desktop Actions */}
-        <div className="hidden items-center gap-3 xl:flex">
+        {/* Desktop Theme Toggle */}
+        <div className="hidden items-center xl:flex">
           <button
             onClick={toggleTheme}
             aria-label="Toggle theme"
@@ -154,15 +153,6 @@ export default function Navbar() {
           >
             {darkMode ? <Sun size={19} /> : <Moon size={19} />}
           </button>
-
-          <Link
-            href="#contact"
-            onClick={() => handleNavClick("#contact")}
-            className="flex items-center gap-2 rounded-full bg-violet-500 px-5 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-violet-600"
-          >
-            Hire Me
-            <ArrowUpRight size={17} />
-          </Link>
         </div>
 
         {/* Mobile Actions */}
@@ -219,16 +209,6 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
-
-            {/* Mobile Hire Me */}
-            <Link
-              href="#contact"
-              onClick={() => handleNavClick("#contact")}
-              className="mt-4 flex items-center justify-center gap-2 rounded-full bg-violet-500 px-6 py-3 font-semibold text-white transition hover:bg-violet-600"
-            >
-              Hire Me
-              <ArrowUpRight size={18} />
-            </Link>
           </div>
         )}
       </nav>
