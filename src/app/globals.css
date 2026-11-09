@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Use the .dark class for manual theme switching */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -21,12 +24,18 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
 }
 
 ::selection {
@@ -42,8 +51,4 @@ body {
 
 section {
   scroll-margin-top: 90px;
-}
-
-html {
-  scroll-behavior: smooth;
 }

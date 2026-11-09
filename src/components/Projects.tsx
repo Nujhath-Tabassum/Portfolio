@@ -86,10 +86,12 @@ export default function Projects() {
                   duration: 0.5,
                   delay: index * 0.1,
                 }}
+                className="flex h-full flex-col overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-violet-300 hover:shadow-xl dark:border-white/10 dark:bg-[#151525] dark:hover:border-violet-500/40"
               >
+                {/* Project Details Link */}
                 <Link
                   href={`/projects/${project.slug}`}
-                  className="group flex h-full flex-col overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-violet-300 hover:shadow-xl dark:border-white/10 dark:bg-[#151525] dark:hover:border-violet-500/40"
+                  className="group flex flex-1 flex-col"
                 >
                   {/* Project Preview */}
                   <div
@@ -106,12 +108,10 @@ export default function Projects() {
                       />
                     ) : (
                       <>
-                        {/* Decorative Circles */}
                         <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full border border-violet-500/10" />
 
                         <div className="absolute -bottom-16 -left-12 h-48 w-48 rounded-full border border-violet-500/10" />
 
-                        {/* Project Icon */}
                         <div className="absolute inset-0 flex items-center justify-center">
                           <div className="flex h-24 w-24 items-center justify-center rounded-3xl border border-white/50 bg-white/70 text-violet-600 shadow-xl backdrop-blur-xl transition duration-500 group-hover:scale-110 dark:border-white/10 dark:bg-[#17172a]/80 dark:text-violet-400">
                             <Icon size={45} strokeWidth={1.5} />
@@ -180,22 +180,37 @@ export default function Projects() {
                         </span>
                       )}
                     </div>
-
-                    {/* Bottom Links */}
-                    <div className="mt-auto flex items-center justify-between border-t border-gray-100 pt-5 dark:border-white/10">
-                      <span className="flex items-center gap-2 text-sm font-semibold text-violet-600 transition-all group-hover:gap-3 dark:text-violet-400">
-                        View Project Details
-                        <ArrowUpRight size={17} />
-                      </span>
-
-                      <div className="flex items-center gap-3 text-gray-400">
-                        {project.liveUrl && <ExternalLink size={18} />}
-
-                        <FaGithub size={18} />
-                      </div>
-                    </div>
                   </div>
                 </Link>
+
+                {/* Card Actions */}
+                <div className="flex items-center justify-between gap-3 border-t border-gray-100 px-6 py-5 dark:border-white/10 sm:px-7">
+                  <Link
+                    href={`/projects/${project.slug}`}
+                    className="flex items-center gap-2 text-sm font-semibold text-violet-600 transition-all hover:gap-3 dark:text-violet-400"
+                  >
+                    View Details
+                    <ArrowUpRight size={17} />
+                  </Link>
+
+                  {project.liveUrl ? (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(event) => event.stopPropagation()}
+                      className="inline-flex items-center gap-2 rounded-xl bg-violet-600 px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-violet-500/20 transition-all hover:-translate-y-0.5 hover:bg-violet-700 hover:shadow-lg"
+                    >
+                      Live Demo
+                      <ExternalLink size={16} />
+                    </a>
+                  ) : (
+                    <span className="inline-flex items-center gap-2 rounded-xl bg-gray-100 px-4 py-2.5 text-sm font-medium text-gray-500 dark:bg-white/5 dark:text-gray-400">
+                      <FaGithub size={16} />
+                      Source Code
+                    </span>
+                  )}
+                </div>
               </motion.div>
             );
           })}

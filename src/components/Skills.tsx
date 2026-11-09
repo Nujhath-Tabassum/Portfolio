@@ -140,7 +140,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative overflow-hidden bg-white px-5 py-16 transition-colors dark:bg-[#0f0f17] sm:px-8 md:py-20 lg:px-12"
+      className="relative overflow-hidden !bg-white px-5 py-16 transition-colors dark:!bg-[#0f0f17] sm:px-8 md:py-20 lg:px-12"
     >
       {/* Background Decoration */}
       <div className="pointer-events-none absolute -left-40 top-20 h-80 w-80 rounded-full bg-violet-500/10 blur-[120px]" />
@@ -148,38 +148,37 @@ export default function Skills() {
       <div className="pointer-events-none absolute -right-40 bottom-20 h-80 w-80 rounded-full bg-blue-500/10 blur-[120px]" />
 
       <div className="relative mx-auto max-w-7xl">
-
         {/* Section Heading */}
-<motion.div
-  initial={{ opacity: 0, y: 25 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  transition={{ duration: 0.6 }}
-  className="mb-14 text-center"
->
-  <span className="inline-flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-[0.2em] text-violet-500">
-    <span className="h-2 w-2 rounded-full bg-violet-500" />
-    My Technical Expertise
-  </span>
+        <motion.div
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-14 text-center"
+        >
+          <span className="inline-flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-[0.2em] text-violet-500">
+            <span className="h-2 w-2 rounded-full bg-violet-500" />
+            My Technical Expertise
+          </span>
 
-  <h2 className="mt-5 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
-    Skills & <span className="text-violet-500">Technologies.</span>
-  </h2>
+          <h2 className="mt-5 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
+            Skills & <span className="text-violet-500">Technologies.</span>
+          </h2>
 
-  <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-600 dark:text-gray-400">
-    A collection of technologies, programming languages, and creative
-    tools I use to build meaningful digital experiences and continuously
-    improve my development skills.
-  </p>
-</motion.div>
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-600 dark:text-gray-400">
+            A collection of technologies, programming languages, and creative
+            tools I use to build meaningful digital experiences and continuously
+            improve my development skills.
+          </p>
+        </motion.div>
 
         {/* Skills Overview */}
         <div className="mb-8 flex flex-wrap items-center gap-3">
-          <span className="rounded-full border border-violet-500/20 bg-violet-500/10 px-4 py-2 text-sm font-semibold text-violet-600 dark:text-violet-400">
+          <span className="rounded-full border border-violet-500/20 bg-violet-50 px-4 py-2 text-sm font-semibold text-violet-600 dark:bg-violet-500/10 dark:text-violet-400">
             05 Categories
           </span>
 
-          <span className="rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-sm font-medium text-gray-600 dark:border-white/10 dark:bg-white/5 dark:text-gray-400">
+          <span className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-600 dark:border-white/10 dark:bg-white/5 dark:text-gray-400">
             29 Skill Entries
           </span>
         </div>
@@ -199,7 +198,7 @@ export default function Skills() {
                   duration: 0.5,
                   delay: index * 0.1,
                 }}
-                className="group relative overflow-hidden rounded-3xl border border-gray-200 bg-gray-50/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-violet-300 hover:shadow-xl hover:shadow-violet-500/5 dark:border-white/10 dark:bg-[#151525] dark:hover:border-violet-500/40 sm:p-8"
+                className="group relative overflow-hidden rounded-3xl border border-gray-100 !bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-violet-200 hover:shadow-xl hover:shadow-violet-500/5 dark:border-white/10 dark:!bg-[#151525] dark:hover:border-violet-500/40 sm:p-8"
               >
                 {/* Decorative Background */}
                 <div className="pointer-events-none absolute -right-10 -top-10 h-36 w-36 rounded-full bg-violet-500/5 blur-3xl transition-all duration-500 group-hover:bg-violet-500/10" />
@@ -207,7 +206,7 @@ export default function Skills() {
                 {/* Category Header */}
                 <div className="relative mb-7 flex items-center justify-between gap-4">
                   <div className="flex items-center gap-4">
-                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-violet-500/10 text-violet-600 dark:text-violet-400">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-violet-50 text-violet-600 dark:bg-violet-500/10 dark:text-violet-400">
                       <CategoryIcon size={23} strokeWidth={1.8} />
                     </div>
 
@@ -232,7 +231,7 @@ export default function Skills() {
                 </div>
 
                 {/* Divider */}
-                <div className="mb-6 h-px w-full bg-gray-200 dark:bg-white/10" />
+                <div className="mb-6 h-px w-full bg-gray-100 dark:bg-white/10" />
 
                 {/* Skill Badges */}
                 <div className="relative flex flex-wrap gap-2.5">
@@ -249,7 +248,7 @@ export default function Skills() {
                           duration: 0.3,
                           delay: skillIndex * 0.04,
                         }}
-                        className="flex items-center gap-2.5 rounded-xl border border-gray-200 bg-white px-3.5 py-2.5 transition-all duration-300 hover:border-violet-300 hover:bg-violet-50 dark:border-white/10 dark:bg-white/[0.03] dark:hover:border-violet-500/40 dark:hover:bg-violet-500/10"
+                        className="flex items-center gap-2.5 rounded-xl border border-gray-100 !bg-gray-50 px-3.5 py-2.5 transition-all duration-300 hover:border-violet-200 hover:!bg-violet-50 dark:border-white/10 dark:!bg-white/[0.03] dark:hover:border-violet-500/40 dark:hover:!bg-violet-500/10"
                       >
                         <Icon
                           size={18}
@@ -278,10 +277,10 @@ export default function Skills() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-12 flex flex-col items-center justify-between gap-4 rounded-2xl border border-violet-500/15 bg-violet-50/50 px-6 py-5 dark:bg-violet-500/5 sm:flex-row"
+          className="mt-12 flex flex-col items-center justify-between gap-4 rounded-2xl border border-violet-100 !bg-violet-50/50 px-6 py-5 dark:border-violet-500/15 dark:!bg-violet-500/5 sm:flex-row"
         >
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-500/10 text-violet-500">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-100 text-violet-500 dark:bg-violet-500/10">
               <Code2 size={21} />
             </div>
 
